@@ -2,22 +2,17 @@
   "manifest_version": 3,
   "name": "Digital Notice Board",
   "version": "1.0",
-  "description": "A digital notice board with multiple widgets for collaboration and communication.",
+  "description": "A digital notice board Chrome extension.",
   "action": {
     "default_popup": "index.html",
     "default_icon": {
-      "16": "icon-16.png",
-      "48": "icon-48.png",
-      "128": "icon-128.png"
+      "16": "assets/icons/icon16.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
     }
   },
-  "permissions": [
-    "activeTab"
-  ],
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["src/main.js"]
-    }
-  ]
+  "background": {
+    "service_worker": "assets/main-P6MYgnR1.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"]
 }

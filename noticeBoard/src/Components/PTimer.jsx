@@ -29,14 +29,24 @@ const PomodoroTimer = () => {
   };
 
   return (
-    <div>
-      <div>{formatTime(seconds)}</div>
-      <button onClick={toggle}>
-        {isActive ? 'Pause' : 'Start'}
-      </button>
-      <button onClick={reset}>
-        Reset
-      </button>
+    <div className="flex items-start justify-start p-10">
+      <div className="bg-white p-8 rounded-lg shadow-lg text-center w-96">
+        <div className="text-6xl font-bold mb-4 animate-pulse">
+          {formatTime(seconds)}
+        </div>
+        <button
+          onClick={toggle}
+          className="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition-colors duration-300 ease-in-out mb-2"
+        >
+          {isActive ? 'Pause' : 'Start'}
+        </button>
+        <button
+          onClick={reset}
+          className="bg-red-500 text-white py-2 px-4 rounded-full hover:bg-red-700 transition-colors duration-300 ease-in-out"
+        >
+          Reset
+        </button>
+      </div>
     </div>
   );
 };
