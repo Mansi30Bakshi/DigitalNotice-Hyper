@@ -1,0 +1,35 @@
+/* Styles.css or Tailwind CSS setup */
+
+/* Set up the homepage container */
+.homepage-container {
+    padding: 2.5rem;
+  }
+  
+  /* Flex layout for the dashboard components */
+  .dashboard-container, .multi-widget-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem; /* Space between components */
+    margin-bottom: 2rem; /* Space below the section */
+    margin-left: 2.5rem
+  }
+  
+  /* Ensure equal sizing and consistent styling for all components */
+  .dashboard-container > div, .multi-widget-container > div {
+    background-color: white;
+    padding: 2rem;
+    margin-left: 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 24rem; /* Max width for the components */
+    width: 100%; /* Full width */
+    text-align: center;
+    gap:2rem;
+  }
+  
