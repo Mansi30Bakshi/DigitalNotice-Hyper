@@ -8,7 +8,9 @@ import DailyQuote from '../Components/Quote';
 import Example from '../Components/HBarUse';
 import Announcements from '../Components/Announcements';
 import ChatGPTBox from '../Components/ChatGPTbox';
-
+import MusicWidgets from '../Components/MusicWidget';
+import GoogleMeetWidget from '../Components/GMeet';
+import HealthTrackerWidget from '../Components/HealthTracking';
 const HomePage = () => (
   <div>
     <div class="bg-white p-8 rounded-lg shadow-lg text-center">
@@ -18,8 +20,11 @@ const HomePage = () => (
     <Announcements/>
     <Clock/>
     <DailyQuote/>
+    <MusicWidgets/>
+    <HealthTrackerWidget/>
+    <GoogleMeetWidget/>
     <ChatGPTBox/>
-
+    
     <GoogleSlides />
     
  
